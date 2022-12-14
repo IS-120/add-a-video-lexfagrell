@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alexa Fagrell's first web site for Intro to Web Development
+" />
+  <title>fagrell web page</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+  <link rel="manifest" href="../images/site.webmanifest" />
+  <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-config" content="../images/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-config" content="./images/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="../styles/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body class="contact">
+  <div class="menu-icon">
+    <svg viewbox="0 0 60 60" width="40px" height="40px">
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+    </svg>
+  </div>
+  <header>
+    <nav class="nav">
+      <ul class="menu">
+        <li><a class="page" href="/">Home</a></li>
+        <li><a class="page" href="about/">About</a></li>
+        <li><a class="page">Contact </a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Contact</h1>
+  <main>
+    <div class="image-wrapper">
+      <img src="../images/contacticon.svg"
+        alt="a silhouette of a person in white and a silhouette of a telephone in white on a black background"
+        width="600" height="600" />
+    </div>
+    <script>
+      document.querySelector(".menu-icon").addEventListener("click", function () {
+        this.parentElement.classList.toggle("close");
+      });
+    </script>
+    <form>
+      <section>
+        <h2>Contact information</h2>
+        <p>
+          <label for="name"> Name:
+          </label>
+          <input type="text" id="name" name="username" required />
+        </p>
+        <p>
+          <label for="email"> E-mail:
+          </label>
+          <input id="email" type="email" name="usermail" required />
+        </p>
+        <div class="fieldset-wrapper">
+          <fieldset>
+            <legend>Select Your Interest</legend>
+            <ul class="list">
+              <li>
+                <input type="radio" id="recipes" name="title" value="recipes" checked />
+                <label for="recipes">Recipes
+                </label>
+              </li>
+              <li>
+                <input type="radio" id="grocery" name="title" value="grocery" checked />
+                <label for="grocery">Grocery Lists
+                </label>
+              </li>
+              <li>
+                <input type="radio" id="other" name="title" value="other" checked />
+                <label for="other">Other
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset>
+          <legend>Select Your Dietary Preference</legend>
+          <ul class="list">
+            <li>
+              <input type="checkbox" id="vegan" name="option" value="vegan" checked />
+              <label for="vegan">Vegan
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="vegetarian" name="option" value="vegatarian" checked />
+              <label for="vegetarian"> Vegetarian
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="pescatarian" name="option" value="pescatarian" checked />
+              <label for="pescatarian"> Pescatarian
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="gluten" name="option" value="gluten" checked />
+              <label for="gluten"> Gluten/Dairy Free
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <p>
+          <label for="allergy">Please List Any Allergies Below:</label>
+          <textarea id="allergy" name="allergy" rows="3" cols="33"
+            placeholder="Fish, Peanut Butter, Nuts, Shellfish...">
+        </textarea>
+        </p>
+      </section>
+      <section>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </section>
+    </form>
+  </main>
+</body>
+
+</html>
