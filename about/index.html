@@ -26,6 +26,12 @@
 </head>
 
 <body class="background">
+  <div class="menu-icon">
+    <svg viewbox="0 0 60 60" width="40px" height="40px">
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+      <line x1="5%" y1="50%" x2="95%" y2="50%" />
+    </svg>
+  </div>
   <img srcset="
         ../images/about300.jpg 300w,
         ../images/about600.jpg 600w,
@@ -34,11 +40,14 @@
     width="600" height="600" />
   <header>
     <nav>
-      <div class="menu-icon">
-        <svg viewbox="0 0 60 60" width="40px" height="40px">
-          <line x1="5%" y1="50%" x2="95%" y2="50%" />
-          <line x1="5%" y1="50%" x2="95%" y2="50%" />
-        </svg>
+      <div class="max">
+        <nav class="nav">
+          <ul class="menu">
+            <li><a class="page">Home</a></li>
+            <li><a class="page" href="about/">About</a></li>
+            <li><a class="page" href="contact/">Contact </a></li>
+          </ul>
+        </nav>
       </div>
       <ul>
         <li><a href="../index.html">Home</a></li>
